@@ -10,7 +10,7 @@
 
 <br/>
 
-> **C fayllarını avtomatik analiz edib kompilyasiya edən və işlədən Python aləti**
+**C fayllarını avtomatik analiz edib kompilyasiya edən və işlədən Python aləti**
 
 </div>
 
