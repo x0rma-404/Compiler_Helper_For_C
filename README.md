@@ -1,31 +1,51 @@
 <div align="center">
 
-# ⚙️ Compiler Helper for C
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=⚙️+Compiler+Helper+for+C;Auto+detect+%7C+Compile+%7C+Run!" alt="Typing SVG" />
 
-**C fayllarını avtomatik analiz edib kompilyasiya edən Python aləti**
+<br/>
 
-![Python](https://img.shields.io/badge/Python-3.x-blue?style=for-the-badge&logo=python)
-![G++](https://img.shields.io/badge/G++-MinGW-orange?style=for-the-badge&logo=gnu)
-![Platform](https://img.shields.io/badge/Platform-Windows-lightblue?style=for-the-badge&logo=windows)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![G++](https://img.shields.io/badge/G++-MinGW--w64-F34B7D?style=for-the-badge&logo=gnu&logoColor=white)](https://mingw-w64.org)
+[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
+[![MIT License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
+[![Stars](https://img.shields.io/github/stars/x0rma-404/Compiler_Helper_For_C?style=for-the-badge&color=yellow)](https://github.com/x0rma-404/Compiler_Helper_For_C)
+
+<br/>
+
+> **C fayllarını avtomatik analiz edib kompilyasiya edən və işlədən Python aləti**
 
 </div>
 
 ---
 
-## 🚀 Nə edir?
+## ✨ Xüsusiyyətlər
 
-> `#include` sətirlərinə baxır, lazımi flag-ları tapır, kompilyasiya edir və proqramı işlədir — hamısı bir komutla!
-
-```
-#include <curl/curl.h>   →   -lcurl
-#include <math.h>        →   -lm
-#include <SDL2/SDL.h>    →   -lSDL2
-```
+<table>
+<tr>
+<td>🔍 <b>Avtomatik analiz</b></td>
+<td>#include sətirlərinə baxır, kitabxanaları tapır</td>
+</tr>
+<tr>
+<td>🏷️ <b>Flag detector</b></td>
+<td>100+ kitabxana üçün avtomatik flag əlavə edir</td>
+</tr>
+<tr>
+<td>✅ <b>Dependency check</b></td>
+<td>Kitabxananın yüklü olub olmadığını yoxlayır</td>
+</tr>
+<tr>
+<td>⚡ <b>Auto compile & run</b></td>
+<td>Kompilyasiya edib proqramı avtomatik işlədir</td>
+</tr>
+<tr>
+<td>🎨 <b>Rəngli terminal</b></td>
+<td>Rəngli və oxunaqlı çıxış</td>
+</tr>
+</table>
 
 ---
 
-## 📦 İstifadə
+## 🚀 İstifadə
 
 ```bash
 python aa.py fayl.c
@@ -36,18 +56,18 @@ python aa.py fayl.c
 ```
 [+] g++ tapıldı
 
---- Kitabxana yoxlanması ---
+─── Kitabxana yoxlanması ───
 [+] math tapıldı
 [+] curl tapıldı
 [!] SDL2 yüklü deyil! Yüklə: pacman -S mingw-w64-x86_64-SDL2
 
---- Komut ---
+─── Komut ───
 g++ main.c -o main.exe -lm -lcurl
 
---- Kompilasiya ---
+─── Kompilasiya ───
 [+] Kompilasiya uğurlu oldu!
 
---- Proqram çıxışı ---
+─── Proqram çıxışı ───
 Salam dünya!
 ```
 
@@ -55,56 +75,87 @@ Salam dünya!
 
 ## 🛠️ Quraşdırma
 
-### Tələblər
-- Python 3.x
-- g++ (MinGW-w64 və ya MSYS2)
-- pkg-config *(isteğe bağlı)*
-
-### g++ quraşdırma (Windows)
+<details>
+<summary><b>🪟 Windows — MSYS2 ilə g++ quraşdırma</b></summary>
+<br>
 
 1. **[MSYS2](https://www.msys2.org)** indir və quraşdır
 2. MSYS2 terminalında:
 ```bash
 pacman -Syu
 pacman -S mingw-w64-x86_64-gcc
+pacman -S mingw-w64-x86_64-pkg-config
 ```
 3. `C:\msys64\mingw64\bin` yolunu Windows **PATH**-ə əlavə et
+4. Yoxla:
+```bash
+g++ --version
+```
 
-### Kitabxana quraşdırma
+</details>
+
+<details>
+<summary><b>📦 Kitabxana quraşdırma (MSYS2)</b></summary>
+<br>
 
 ```bash
 pacman -S mingw-w64-x86_64-curl
 pacman -S mingw-w64-x86_64-SDL2
 pacman -S mingw-w64-x86_64-sqlite3
 pacman -S mingw-w64-x86_64-openssl
+pacman -S mingw-w64-x86_64-libpng
+pacman -S mingw-w64-x86_64-opencv
 ```
+
+</details>
 
 ---
 
-## 📚 Dəstəklənən kitabxanalar (100+)
+## 📚 Dəstəklənən kitabxanalar
+
+<div align="center">
 
 | 🏷️ Kateqoriya | 📦 Kitabxanalar |
 |:---:|:---|
-| ⚙️ Sistem | `math` `pthread` `dl` `rt` `atomic` |
-| 🌐 Şəbəkə | `curl` `ssl` `zmq` `uv` `websockets` `ssh2` |
-| 🗄️ Veritabanı | `sqlite3` `pq` `redis` `leveldb` `lmdb` `rocksdb` |
-| 🎮 Qrafika | `SDL2` `OpenGL` `glfw3` `vulkan` `cairo` `glew` |
-| 🔊 Ses | `alsa` `portaudio` `opus` `vorbis` `sndfile` |
-| 🖼️ Şəkil | `libpng` `jpeg` `webp` `opencv` `tiff` |
-| 🗜️ Sıxışdırma | `zlib` `bz2` `zstd` `lz4` `snappy` |
-| 📝 Mətn | `pcre` `ncurses` `readline` `xml2` `json-c` |
-| 🔐 Şifrələmə | `ssl` `sodium` `gcrypt` `gnutls` `argon2` |
-| 🔢 Riyaziyyat | `gsl` `fftw3` `blas` `lapack` `gmp` |
-| 🚀 Boost | `boost_system` `boost_filesystem` `boost_thread` `boost_regex` |
+| ⚙️ **Sistem** | `math` `pthread` `dl` `rt` `atomic` `stdc++` |
+| 🌐 **Şəbəkə** | `curl` `ssl` `zmq` `uv` `websockets` `ssh2` `microhttpd` |
+| 🗄️ **Veritabanı** | `sqlite3` `pq` `redis` `leveldb` `lmdb` `rocksdb` `mariadb` |
+| 🎮 **Qrafika** | `SDL2` `SDL2_image` `SDL2_mixer` `OpenGL` `glfw3` `vulkan` `cairo` |
+| 🔊 **Ses** | `alsa` `portaudio` `opus` `vorbis` `sndfile` `mpg123` |
+| 🖼️ **Şəkil** | `libpng` `jpeg` `webp` `opencv` `tiff` `Magick++` |
+| 🗜️ **Sıxışdırma** | `zlib` `bz2` `zstd` `lz4` `snappy` `archive` `lzma` |
+| 📝 **Mətn / Format** | `pcre` `ncurses` `readline` `xml2` `json-c` `yaml` `jansson` |
+| 🔐 **Şifrələmə** | `ssl` `sodium` `gcrypt` `gnutls` `argon2` `gpgme` |
+| 🔢 **Riyaziyyat** | `gsl` `fftw3` `blas` `lapack` `gmp` `mpfr` |
+| 🖥️ **Sistem / OS** | `uuid` `fuse` `udev` `dbus` `systemd` `bluetooth` |
+| 🚀 **Boost** | `boost_system` `boost_filesystem` `boost_thread` `boost_regex` |
+
+</div>
 
 ---
 
-## 📄 Lisans
+## 📊 Statistika
 
-Bu layihə **lisanssız** paylaşılır.
+<div align="center">
+
+![GitHub repo size](https://img.shields.io/github/repo-size/x0rma-404/Compiler_Helper_For_C?style=for-the-badge&color=blue)
+![GitHub last commit](https://img.shields.io/github/last-commit/x0rma-404/Compiler_Helper_For_C?style=for-the-badge&color=purple)
+![GitHub language count](https://img.shields.io/github/languages/count/x0rma-404/Compiler_Helper_For_C?style=for-the-badge&color=orange)
+
+</div>
 
 ---
 
 <div align="center">
-  <sub>Made with ❤️ by <a href="https://github.com/x0rma-404">x0rma-404</a></sub>
+
+### 📄 MIT Lisansı altında paylaşılır
+
+<br/>
+
+**⭐ Bəyəndinsə ulduz ver!**
+
+<br/>
+
+<sub>Made with ❤️ by <a href="https://github.com/x0rma-404">x0rma-404</a></sub>
+
 </div>
