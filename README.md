@@ -1,14 +1,12 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=30&pause=1000&color=00F7FF&center=true&vCenter=true&width=600&lines=⚙️+Compiler+Helper+for+C;Auto+detect+%7C+Compile+%7C+Run!" alt="Typing SVG" />
-
+![header](https://capsule-render.vercel.app/api?type=waving&color=00F7FF&height=200&section=header&text=Compiler%20Helper%20for%20C&fontSize=40&fontColor=ffffff&animation=fadeIn&desc=Auto%20detect%20%7C%20Compile%20%7C%20Run&descSize=18&descAlignY=75)
 <br/>
 
 [![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![G++](https://img.shields.io/badge/G++-MinGW--w64-F34B7D?style=for-the-badge&logo=gnu&logoColor=white)](https://mingw-w64.org)
 [![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://microsoft.com)
 [![MIT License](https://img.shields.io/badge/License-MIT-22C55E?style=for-the-badge)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/x0rma-404/Compiler_Helper_For_C?style=for-the-badge&color=yellow)](https://github.com/x0rma-404/Compiler_Helper_For_C)
 
 <br/>
 
