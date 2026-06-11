@@ -101,7 +101,7 @@ pacman -S mingw-w64-x86_64-openssl
 
 ## 📄 Lisans
 
-Bu layihə **MIT** lisansı altında paylaşılır.
+Bu layihə **lisanssız** paylaşılır.
 
 ---
 
