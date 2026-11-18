@@ -277,7 +277,6 @@ pacman -S mingw-w64-x86_64-boost
 ## 👥 Müəllif və Təşəkkür
 
 - **Tərtibatçı:** [x0rma-404](https://github.com/x0rma-404)
-- **Akademik Rəhbər:** Samir Müəllim üçün xüsusi layihə (C++ Project)
 - **İcazə:** [MIT License](LICENSE)
 
 <div align="center">
